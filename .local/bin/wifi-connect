@@ -1,0 +1,16 @@
+#!/bin/bash
+
+if [ "$1" == "--new" ]; then
+    read -p "SSID: " SSID
+    read -sp "Password: " PASSWORD
+
+    printf "\r\n"
+
+    nmcli d wifi connect $SSID password "$PASSWORD"
+else
+    read -p "SSID: " SSID
+    
+    printf "\r\n"
+
+    nmcli d wifi connect $SSID   
+fi
