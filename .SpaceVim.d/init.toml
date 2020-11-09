@@ -39,3 +39,7 @@
   name = 'shell'
   default_position = 'top'
   default_height = 30
+
+[[layers]]
+  name = 'core'
+  filetree_show_hidden = true
