@@ -22,6 +22,7 @@
 
   # Set nerdtree as the file manager
   filemanager = "nerdtree"
+  filetree_direction = "left"
 
 # Add custom plugin for ayu color scheme https://github.com/ayu-theme/ayu-vim
 [[custom_plugins]]
