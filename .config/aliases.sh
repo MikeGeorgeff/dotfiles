@@ -25,6 +25,7 @@ alias zshrc="nvim ~/.zshrc"
 alias aliases="nvim ~/.config/aliases.sh"
 alias i3config="nvim ~/.config/i3/config"
 alias i3blocksconfig="nvim ~/.config/i3blocks/config"
+alias viminit="nvim ~/.SpaceVim.d/init.toml"
 
 # Config for dotfiles repo
 alias config="/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME"
