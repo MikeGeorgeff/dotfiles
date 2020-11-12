@@ -1,0 +1,10 @@
+#!/bin/bash
+
+DIRECTORY=$HOME/screenshots
+FILENAME=$(date +%Y-%m-%d-%H-%M-%S).png
+
+if [ "$1" == "--select" ]; then
+  scrot -s $DIRECTORY/$FILENAME && notify-send "Screenshot Taken" "$FILENAME" &&  echo -n $FILENAME | xclip -selection clipboard
+else
+  scrot $DIRECTORY/$FILENAME && notify-send "Screenshot Taken" "$FILENAME" &&  echo -n $FILENAME | xclip -selection clipboard
+fi

@@ -18,6 +18,9 @@ exec_always --no-startup-id feh --bg-scale ~/wallpaper/valley.jpg
 # Start compton
 exec --no-startup-id compton
 
+# Start Dunst
+exec --no-startup-id dunst
+
 # Remove window boarders
 for_window [class=".*"] border pixel 0
 
@@ -42,7 +45,11 @@ bindsym $mod+Return exec alacritty
 bindsym $mod+Shift+q kill
 
 # start dmenu (a program launcher)
-bindsym $mod+d exec --no-startup-id rofi -show run
+bindsym $mod+d exec --no-startup-id i3-dmenu-desktop --dmenu="rofi -dmenu -i -p 'apps'"
+
+# screenshots
+bindsym $mod+Print exec ./.local/bin/screencap # full screen
+bindsym --release $mod+Shift+Print exec ./.local/bin/screencap --select # selected area
 
 # change focus
 bindsym $mod+Left focus left
