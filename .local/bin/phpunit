@@ -1,0 +1,3 @@
+#!/bin/bash
+
+docker run --rm -it -v $(pwd):/app registry.digitalocean.com/uscca/php:7.2-dev vendor/bin/phpunit

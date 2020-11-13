@@ -17,6 +17,9 @@ alias lt="exa -aT --color=always --group-directories-first"
 # vim
 alias vim=nvim
 
+# python
+alias python=python3
+
 # clock
 alias clock="tty-clock -c -C 3 -b -t"
 
