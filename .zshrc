@@ -1,8 +1,8 @@
 # Show sys info at load
 neofetch
 
-PATH="$HOME/.local/bin${PATH:+:${PATH}}"
-EDITOR="nvim"
+export PATH="$HOME/.local/bin${PATH:+:${PATH}}"
+export EDITOR"nvim"
 export TERM="xterm-256color"
 
 # configure history
@@ -14,7 +14,6 @@ SAVEHIST=1000000
 source ~/.config/aliases.sh
 
 # load plugins
-source ~/.config/zsh/plugins/git/git.zsh
 source ~/.config/zsh/plugins/autosuggestions/zsh-autosuggestions.zsh
 source ~/.config/zsh/plugins/syntax-highlighting/zsh-syntax-highlighting.zsh
 
