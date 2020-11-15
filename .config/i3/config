@@ -13,10 +13,10 @@ set $urgent-bg-color     #E53935
 font pango:DejaVu Sans Mono 12
 
 # Reload Wallpaper
-exec_always --no-startup-id feh --bg-scale ~/wallpaper/valley.jpg
+exec_always --no-startup-id feh --bg-scale ~/wallpaper/arch-1.png
 
-# Start compton
-exec --no-startup-id compton
+# Start picom
+exec --no-startup-id picom
 
 # Start Dunst
 exec --no-startup-id dunst

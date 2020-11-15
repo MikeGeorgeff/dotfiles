@@ -56,20 +56,20 @@ interval=1
 # Memory usage
 #
 # The type defaults to "mem" if the instance is not specified.
-[memory]
-label=MEM
-separator=false
-interval=1
+#[memory]
+#label=MEM
+#separator=false
+#interval=1
 
 # CPU usage
 #
 # The script may be called with -w and -c switches to specify thresholds,
 # see the script for details.
-[cpu_usage]
-label=CPU
-interval=1
+#[cpu_usage]
+#label=CPU
+#interval=1
 #min_width=CPU: 100.00%
-separator=true
+#separator=true
 
 #[load_average]
 #interval=10
@@ -89,11 +89,11 @@ signal=10
 # Battery indicator
 #
 # The battery instance defaults to 0.
-[battery]
-label=
+#[battery]
+#label=
 #label=⚡
 #instance=1
-interval=30
+#interval=30
 
 # Date Time
 #
