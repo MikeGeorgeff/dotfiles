@@ -1,3 +1,3 @@
 #!/bin/bash
 
-docker run --rm -it -v $(pwd):/app registry.digitalocean.com/uscca/php:7.2-composer "$@"
+docker run --rm -it -v $(pwd):/app registry.digitalocean.com/uscca/php:7.4-composer "$@"
