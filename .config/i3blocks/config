@@ -49,9 +49,9 @@ separator=false
 #interval=10
 #separator=false
 
-[bandwidth]
-#instance=eth0
-interval=1
+#[bandwidth]
+#instance=wlp0s20f3
+#interval=1
 
 # Memory usage
 #

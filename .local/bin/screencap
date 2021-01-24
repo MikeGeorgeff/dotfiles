@@ -1,6 +1,6 @@
 #!/bin/bash
 
-DIRECTORY=$HOME/screenshots
+DIRECTORY=$HOME/Pictures
 FILENAME=$(date +%Y-%m-%d-%H-%M-%S).png
 
 if [ "$1" == "--select" ]; then
