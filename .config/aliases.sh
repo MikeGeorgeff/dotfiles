@@ -30,7 +30,7 @@ alias i3config="nvim ~/.config/i3/config"
 alias i3blocksconfig="nvim ~/.config/i3blocks/config"
 alias viminit="nvim ~/.SpaceVim.d/init.toml"
 
-alias php-ide="docker run --rm -it -d --privileged -v /tmp/.X11-unix:/tmp/.X11-unix -v $(pwd):/app -e DISPLAY=unix$DISPLAY --device /dev/dri --name php-ide --net="host" mikegeorgeff/vscode:php7.4"
+alias php-ide="xhost +local:root; docker run --rm -it -d --privileged -v /tmp/.X11-unix:/tmp/.X11-unix -v $(pwd):/app -e DISPLAY=unix$DISPLAY --device /dev/dri --name php-ide --net="host" mikegeorgeff/vscode:php7.4"
 
 # Config for dotfiles repo
 alias config="/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME"
