@@ -12,17 +12,13 @@ set $urgent-bg-color     #E53935
 # Font 
 font pango:DejaVu Sans Mono 12
 
-# Reload Wallpaper
-exec_always --no-startup-id feh --bg-fill ~/wallpaper/arch-8.jpg
-
-# Start picom
-exec --no-startup-id picom
-
-# Start Dunst
+# Auto Start
+exec --no-startup-id pasystray
+exec --no-startup-id nitrogen --restore; sleep 1; picom -b
+exec --no-startup-id copyq
 exec --no-startup-id dunst
-
-# Polybar
-exec_always --no-startup-id ~/.config/polybar/launch.sh
+exec --no-startup-id nm-applet
+exec --no-startup-id pamac-tray
 
 # Remove window boarders
 for_window [class=".*"] border pixel 0
@@ -30,6 +26,11 @@ for_window [class=".*"] border pixel 0
 # Add window gaps
 gaps outer 0
 gaps inner 6
+
+# Keyboard Backlight
+bindsym $mod+Prior exec asusctl -k low
+bindsym $mod+Shift+Prior exec asusctl -k med
+bindsym $mod+Next exec asusctl -k off
 
 # Use pactl to adjust volume in PulseAudio.
 set $refresh_i3status killall -SIGUSR1 i3status
@@ -45,14 +46,13 @@ floating_modifier $mod
 bindsym $mod+Return exec alacritty
 
 # kill focused window
-bindsym $mod+Shift+c kill
+bindsym $mod+c kill
 
-# start dmenu (a program launcher)
-bindsym $mod+d exec --no-startup-id i3-dmenu-desktop --dmenu="rofi -dmenu -i -p 'apps'"
+# app launcher
+bindsym $mod+d exec rofi -lines 12 -padding 18 -width 60 -location 0 -show drun -sidebar-mode -columns 3 -font 'Noto Sans 20'
 
 # screenshots
-bindsym $mod+Print exec ./.local/bin/screencap # full screen
-bindsym --release $mod+Shift+Print exec ./.local/bin/screencap --select # selected area
+bindsym Print exec --no-startup-id flameshot gui
 
 # change focus
 bindsym $mod+Left focus left

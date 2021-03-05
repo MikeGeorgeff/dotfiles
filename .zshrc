@@ -1,4 +1,4 @@
-# Show sys info at load
+clear
 neofetch
 
 export PATH="$HOME/.local/bin${PATH:+:${PATH}}"

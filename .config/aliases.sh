@@ -20,8 +20,7 @@ alias vim=nvim
 # python
 alias python=python3
 
-# clock
-alias clock="tty-clock -c -C 3 -b -t"
+alias locate=plocate
 
 # configs
 alias zshrc="nvim ~/.zshrc"
