@@ -13,19 +13,20 @@ set $urgent-bg-color     #E53935
 font pango:DejaVu Sans Mono 12
 
 # Auto Start
-exec --no-startup-id pasystray
 exec --no-startup-id nitrogen --restore; sleep 1; picom -b
 exec --no-startup-id copyq
 exec --no-startup-id dunst
 exec --no-startup-id nm-applet
-exec --no-startup-id pamac-tray
+exec_always --no-startup-id ${HOME}/.config/polybar/launch.sh
 
 # Remove window boarders
 for_window [class=".*"] border pixel 0
 
 # Add window gaps
 gaps outer 0
-gaps inner 6
+gaps inner -2
+
+smart_gaps on
 
 # Keyboard Backlight
 bindsym $mod+Prior exec asusctl -k low
