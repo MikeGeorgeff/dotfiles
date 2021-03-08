@@ -2,8 +2,10 @@ clear
 neofetch
 
 export PATH="$HOME/.local/bin${PATH:+:${PATH}}"
+export PATH="$HOME/.npm/bin${PATH:+:${PATH}}"
 export EDITOR"nvim"
 export TERM="xterm-256color"
+export NPM_CONFIG_PREFIX="$HOME/.npm"
 
 # configure history
 HISTFILE=$HOME/.zsh_history
