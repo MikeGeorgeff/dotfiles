@@ -87,6 +87,7 @@ alias la="eza -a --group-directories-first"
 alias li="eza -l --group-directories-first"
 alias lt="eza -aT --group-directories-first"
 alias cat="batcat"
+alias vim="nvim"
 
 # export MANPATH="/usr/local/man:$MANPATH"
 
