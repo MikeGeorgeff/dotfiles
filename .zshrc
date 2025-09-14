@@ -88,6 +88,10 @@ alias li="eza -l --group-directories-first"
 alias lt="eza -aT --group-directories-first"
 alias cat="batcat"
 alias vim="nvim"
+alias pubkey="ssh-keygen -f $HOME/.ssh/id_ed25519 -y"
+alias python="python3"
+alias shutdown="sudo shutdown now"
+alias reboot="sudo reboot"
 
 # export MANPATH="/usr/local/man:$MANPATH"
 
