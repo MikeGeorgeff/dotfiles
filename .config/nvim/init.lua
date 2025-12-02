@@ -1,2 +1,31 @@
--- bootstrap lazy.nvim, LazyVim and your plugins
-require("config.lazy")
+-- Neovim Configuration
+-- Main init.lua file
+
+-- Set leader key early
+vim.g.mapleader = " "
+vim.g.maplocalleader = " "
+
+-- Bootstrap lazy.nvim plugin manager
+local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
+if not vim.loop.fs_stat(lazypath) then
+  vim.fn.system({
+    "git",
+    "clone",
+    "--filter=blob:none",
+    "https://github.com/folke/lazy.nvim.git",
+    "--branch=stable",
+    lazypath,
+  })
+end
+vim.opt.rtp:prepend(lazypath)
+
+-- Load core settings
+require("settings")
+require("keymaps")
+
+-- Setup plugins
+require("lazy").setup("plugins", {
+  change_detection = {
+    notify = false,
+  },
+})
