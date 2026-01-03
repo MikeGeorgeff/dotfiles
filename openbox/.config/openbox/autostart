@@ -25,11 +25,10 @@ hsetroot -solid "#2E3436" &
 
 ## Group start:
 ## 1. nitrogen - restores wallpaper
-## 2. compositor - start
-## 3. sleep - give compositor time to start
-## 4. tint2 panel
+## 2. compton - compositor
+## 3. tint2 panel
 nitrogen --restore &
-cbpp-compositor --start &
+compton &
 tint2 &
 
 ## Start nm-applet for systray
@@ -57,13 +56,7 @@ xset r rate 250 25 &
 ## Turn on/off system beep
 xset b off &
 
-## cbpp-user-setup - User space initialization, sets .gtk-bookmarks and
-## creates symlink in images to wallpaper folder only runs once. Safe to remove.
-##~/.cbpp-user-setup &
-
-## cbpp-welcome - post-installation script, will not run in a live session and
-## only runs once. Safe to remove.
-(sleep 10s && cbpp-welcome --firstrun) &
+## CBPP-specific scripts removed for generic compatibility
 
 ## Run the conky
 conky -q &
