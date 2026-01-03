@@ -61,19 +61,45 @@ CPU usage:$alignr${cpu cpu0}%
 
 S H O R T C U T    K E Y S
 ${hr}
+A P P L I C A T I O N S
 Super+r$alignr Run Dialog
-Super+Space$alignr Main Menu
-Super+0$alignr Maximize Window
-Super+Shift+0$alignr Toggle Full Screen
-Super+(LRUD)$alignr Toggle Window Position
-Super+Shift+(LRUD)$alignr Switch Active Window
-Super+(1-6)$alignr Change Workspace
 Super+t$alignr Terminal
 Super+f$alignr File Manager
 Super+w$alignr Web Browser
 Super+h$alignr Task Manager
-Super+l$alignr Lock Screen
 Super+v$alignr Volume Control
+Super+l$alignr Lock Screen
 Super+x$alignr Logout
-PrtSc$alignr Screenshot
+
+W I N D O W    M A N A G E M E N T
+Super+q$alignr Close Window
+Super+0$alignr Maximize Window
+Super+Shift+0$alignr Toggle Fullscreen
+Super+Left$alignr Snap Left Half
+Super+Right$alignr Snap Right Half
+Super+Up$alignr Snap Top Half
+Super+Down$alignr Snap Bottom Half
+Alt+Space$alignr Window Menu
+Alt+Escape$alignr Lower Window
+
+W I N D O W    S W I T C H I N G
+Alt+Tab$alignr Next Window
+Alt+Shift+Tab$alignr Previous Window
+Ctrl+Alt+Tab$alignr Cycle All (incl panels)
+Super+Shift+Arrows$alignr Directional Cycling
+Super+Tab$alignr Window List Menu
+
+D E S K T O P    S W I T C H I N G
+Super+(1-6)$alignr Go to Workspace 1-6
+Ctrl+Alt+Arrows$alignr Navigate Workspaces
+Shift+Alt+Arrows$alignr Send Window to Workspace
+Super+d$alignr Show Desktop
+
+M E N U S
+Super+Space$alignr Root Menu
+Alt+Ctrl+q$alignr Root Menu (alt)
+
+S C R E E N S H O T S
+PrtSc$alignr Screenshot Tool
+Alt+PrtSc$alignr Full Screenshot
 ]];
