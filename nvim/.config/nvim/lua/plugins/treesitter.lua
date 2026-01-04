@@ -11,7 +11,6 @@ return {
       ensure_installed = {
         "bash",
         "c",
-        "html",
         "lua",
         "markdown",
         "vim",
@@ -21,9 +20,6 @@ return {
         "typescript",
         "json",
         "yaml",
-        "css",
-        "rust",
-        "go",
       },
       auto_install = true,
       highlight = {

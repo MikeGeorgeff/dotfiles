@@ -81,10 +81,6 @@ return {
       "lua_ls",
       "pyright",
       "ts_ls",
-      "html",
-      "cssls",
-      "rust_analyzer",
-      "gopls",
       "intelephense", -- PHP
       "jsonls", -- JSON
       "yamlls", -- YAML
@@ -93,8 +89,6 @@ return {
       "ansiblels", -- Ansible
       "dockerls", -- Dockerfile
       "docker_compose_language_service", -- Docker Compose
-      "terraformls", -- Terraform
-      "tflint", -- Terraform linter
     }
 
     for _, lsp in ipairs(servers) do

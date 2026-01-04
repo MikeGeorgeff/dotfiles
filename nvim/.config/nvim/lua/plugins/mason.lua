@@ -25,10 +25,6 @@ return {
         "lua_ls",
         "pyright",
         "ts_ls",
-        "html",
-        "cssls",
-        "rust_analyzer",
-        "gopls",
         "intelephense", -- PHP
         "jsonls", -- JSON
         "yamlls", -- YAML
@@ -37,8 +33,6 @@ return {
         "ansiblels", -- Ansible
         "dockerls", -- Dockerfile
         "docker_compose_language_service", -- Docker Compose
-        "terraformls", -- Terraform
-        "tflint", -- Terraform linter
       },
       automatic_installation = true,
     })
@@ -50,11 +44,8 @@ return {
         "isort",
         "black",
         "eslint_d",
-        "rustfmt",
-        "gofmt",
         "php-cs-fixer",
         "shfmt", -- Bash formatter
-        "terraform-ls", -- Terraform
         "ansible-lint", -- Ansible linter
       },
     })
