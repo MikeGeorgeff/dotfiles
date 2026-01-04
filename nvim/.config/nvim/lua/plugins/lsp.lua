@@ -7,7 +7,6 @@ return {
     { "antosha417/nvim-lsp-file-operations", config = true },
   },
   config = function()
-    local lspconfig = require("lspconfig")
     local cmp_nvim_lsp = require("cmp_nvim_lsp")
     local keymap = vim.keymap
 
@@ -92,14 +91,14 @@ return {
     }
 
     for _, lsp in ipairs(servers) do
-      lspconfig[lsp].setup({
+      vim.lsp.enable(lsp, {
         capabilities = capabilities,
         on_attach = on_attach,
       })
     end
 
     -- Lua specific settings
-    lspconfig.lua_ls.setup({
+    vim.lsp.enable("lua_ls", {
       capabilities = capabilities,
       on_attach = on_attach,
       settings = {

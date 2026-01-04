@@ -5,6 +5,7 @@ local keymap = vim.keymap
 keymap.set("n", "<leader>w", "<cmd>w<CR>", { desc = "Save file" })
 keymap.set("n", "<leader>q", "<cmd>q<CR>", { desc = "Quit" })
 keymap.set("n", "<leader>x", "<cmd>x<CR>", { desc = "Save and quit" })
+keymap.set("n", "<leader>sk", "<cmd>Telescope keymaps<CR>", { desc = "Show all keymaps" })
 
 -- Clear search highlights
 keymap.set("n", "<Esc>", "<cmd>nohlsearch<CR>", { desc = "Clear search highlights" })
