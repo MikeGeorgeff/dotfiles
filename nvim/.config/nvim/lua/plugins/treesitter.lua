@@ -4,7 +4,13 @@ return {
   build = ":TSUpdate",
   event = { "BufReadPre", "BufNewFile" },
   dependencies = {
-    "nvim-treesitter/nvim-treesitter-textobjects",
+    {
+      "nvim-treesitter/nvim-treesitter-textobjects",
+      init = function()
+        -- Disable plugin file to prevent premature loading
+        vim.g.loaded_nvim_treesitter_textobjects = 1
+      end,
+    },
   },
   config = function()
     require("nvim-treesitter.configs").setup({
