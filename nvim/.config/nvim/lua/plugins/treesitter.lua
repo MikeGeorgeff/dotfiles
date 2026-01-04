@@ -6,10 +6,7 @@ return {
   dependencies = {
     {
       "nvim-treesitter/nvim-treesitter-textobjects",
-      init = function()
-        -- Disable plugin file to prevent premature loading
-        vim.g.loaded_nvim_treesitter_textobjects = 1
-      end,
+      lazy = true,
     },
   },
   config = function()
