@@ -5,9 +5,6 @@
 vim.g.mapleader = " "
 vim.g.maplocalleader = " "
 
--- Prevent treesitter-textobjects plugin file from loading prematurely
-vim.g.loaded_nvim_treesitter_textobjects = 1
-
 -- Bootstrap lazy.nvim plugin manager
 local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
 if not vim.loop.fs_stat(lazypath) then
