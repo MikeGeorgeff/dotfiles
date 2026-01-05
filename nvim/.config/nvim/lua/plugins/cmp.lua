@@ -40,7 +40,6 @@ return {
         { name = "nvim_lsp" },
         { name = "luasnip" },
         { name = "buffer" },
-        { name = "path" },
       }),
       formatting = {
         format = lspkind.cmp_format({
@@ -48,6 +47,16 @@ return {
           ellipsis_char = "...",
         }),
       },
+    })
+
+    -- Set up path completion separately with manual trigger only
+    cmp.setup.filetype({ "sh", "zsh", "bash" }, {
+      sources = cmp.config.sources({
+        { name = "nvim_lsp" },
+        { name = "path" },
+        { name = "luasnip" },
+        { name = "buffer" },
+      }),
     })
   end,
 }
