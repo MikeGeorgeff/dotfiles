@@ -26,7 +26,7 @@ opt.termguicolors = true
 opt.background = "dark"
 opt.signcolumn = "yes"
 opt.cursorline = true
-opt.colorcolumn = "80"
+opt.colorcolumn = "120"
 
 -- Behavior
 opt.mouse = "a"
