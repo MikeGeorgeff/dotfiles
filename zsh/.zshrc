@@ -89,12 +89,6 @@ if [[ $- == *i* ]]; then
     fastfetch
 fi
 
-# Add padding above the terminal prompt
-precmd() {
-    precmd_functions+=()
-    print ""
-}
-
 eval $(thefuck --alias)
 
 source $HOME/.config/shell/aliases.sh
