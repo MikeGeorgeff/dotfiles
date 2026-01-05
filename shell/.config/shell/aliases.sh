@@ -13,6 +13,7 @@ alias ...="cd ../.."
 alias ....="cd ../../.."
 
 alias rm="rm -i"
+alias mkdir="mkdir -p"
 
 alias ls="eza -la --group-directories-first"
 alias la="eza -a --group-directories-first"
