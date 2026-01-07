@@ -7,6 +7,14 @@ alias shutdown="sudo /sbin/shutdown"
 
 alias vi="nvim"
 alias vim="nvim"
+alias edit="nvim"
+
+alias tmn="tmux new -s"
+alias tml="tmux ls"
+alias tma="tmux attach"
+alias tmat="tmux attach -t"
+alias tmk="tmux kill-session -t"
+alias tmka="tmux kill-session -a"
 
 alias ..="cd .."
 alias ...="cd ../.."
