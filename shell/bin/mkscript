@@ -1,0 +1,49 @@
+#!/bin/bash
+
+OPEN_EDITOR=false
+
+# Parse flags
+while [[ "$1" == -* ]]; do
+    case "$1" in
+        -e|--edit)
+            OPEN_EDITOR=true
+            shift
+            ;;
+        *)
+            echo "Unknown option: $1"
+            exit 1
+            ;;
+    esac
+done
+
+if [ $# -eq 0 ]; then
+    echo "Usage: mkscript [-e|--edit] <filename> [interpreter]"
+    echo ""
+    echo "Options:"
+    echo "  -e, --edit    Open the file in editor after creation"
+    echo ""
+    echo "Examples:"
+    echo "  mkscript myscript.sh          # Creates bash script"
+    echo "  mkscript myscript.py python3  # Creates python script"
+    echo "  mkscript -e myscript.sh       # Creates and opens bash script"
+    exit 1
+fi
+
+FILENAME="$1"
+INTERPRETER="${2:-bash}"
+
+if [ -f "$FILENAME" ]; then
+    echo "Error: File '$FILENAME' already exists"
+    exit 1
+fi
+
+echo "#!/usr/bin/env $INTERPRETER" >"$FILENAME"
+echo "" >>"$FILENAME"
+chmod +x "$FILENAME"
+
+echo "Created executable script: $FILENAME"
+echo "Shebang: #!/usr/bin/env $INTERPRETER"
+
+if [ "$OPEN_EDITOR" = true ]; then
+    ${EDITOR:-nvim} "$FILENAME"
+fi
