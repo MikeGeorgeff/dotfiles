@@ -20,6 +20,8 @@ alias ..="cd .."
 alias ...="cd ../.."
 alias ....="cd ../../.."
 
+alias c="clear"
+
 alias mkdir="mkdir -p"
 
 alias ls="eza -la --group-directories-first"
