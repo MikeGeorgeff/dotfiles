@@ -1,0 +1,28 @@
+#!/bin/bash
+
+echo ""
+
+if [ ! -f ~/.config/shell/aliases.sh ]; then
+    echo "Error: Aliases file not found at ~/.config/shell/aliases.sh"
+    exit 1
+fi
+
+# Color codes
+GREEN='\033[0;32m'
+BLUE='\033[0;34m'
+NC='\033[0m' # No Color
+
+echo "Current aliases:"
+echo "================"
+
+while IFS= read -r line; do
+    if [[ "$line" =~ ^[[:space:]]*alias[[:space:]] ]]; then
+        # Process alias lines
+        clean_line=$(echo "$line" | sed 's/^[[:space:]]*//' | sed 's/alias //')
+        IFS='=' read -r alias_name alias_cmd <<< "$clean_line"
+        printf "${GREEN}%-20s${NC} ${BLUE}%s${NC}\n" "$alias_name" "$alias_cmd"
+    elif [[ -z "$line" || "$line" =~ ^[[:space:]]*$ ]]; then
+        # Preserve blank lines
+        echo ""
+    fi
+done < ~/.config/shell/aliases.sh
