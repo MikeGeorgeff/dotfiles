@@ -1,0 +1,3 @@
+#!/bin/bash
+
+nix-shell -p lazydocker --run lazydocker
