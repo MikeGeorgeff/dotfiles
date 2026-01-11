@@ -1,0 +1,57 @@
+# Whitelist approach: ignore everything, then explicitly allow tracked files
+*
+!*/
+
+# Root files
+!.gitignore
+!README.md
+
+# Alacritty
+!alacritty/.config/alacritty/alacritty.toml
+
+# Compton
+!compton/.config/compton.conf
+
+# Conky
+!conky/.conkyrc
+
+# Git
+!git/.gitconfig
+
+# Neovim
+!nvim/.config/nvim/README.md
+!nvim/.config/nvim/init.lua
+!nvim/.config/nvim/lazy-lock.json
+!nvim/.config/nvim/lua/keymaps.lua
+!nvim/.config/nvim/lua/settings.lua
+!nvim/.config/nvim/lua/plugins/*.lua
+
+# Openbox
+!openbox/.config/openbox/autostart
+!openbox/.config/openbox/menu.xml
+!openbox/.config/openbox/rc.xml
+!openbox/README.md
+
+# Shell
+!shell/.config/shell/aliases.sh
+!shell/bin/aliases
+!shell/bin/lazydocker
+!shell/bin/lazygit
+!shell/bin/mkscript
+!shell/bin/yt-dlp
+
+# SSH (config only, no private keys)
+!ssh/.ssh/config
+
+# Terminator
+!terminator/.config/terminator/config
+
+# Tint2
+!tint2/.config/tint2/tint2rc
+
+# Tmux
+!tmux/.tmux.conf
+!tmux/README.md
+
+# Zsh
+!zsh/.zshrc
