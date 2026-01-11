@@ -10,6 +10,7 @@ This repository contains configurations for:
 - **compton** - Compositor configuration
 - **conky** - System monitor configuration
 - **git** - Git global configuration
+- **nitrogen** - Wallpaper manager configuration
 - **nvim** - Neovim editor configuration
 - **openbox** - Openbox window manager configuration
 - **shell** - Shell scripts and aliases

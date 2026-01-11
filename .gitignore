@@ -29,6 +29,10 @@
 !nvim/.config/nvim/lua/settings.lua
 !nvim/.config/nvim/lua/plugins/*.lua
 
+# Nitrogen
+!nitrogen/.config/nitrogen/bg-saved.cfg
+!nitrogen/.config/nitrogen/nitrogen.cfg
+
 # Openbox
 !openbox/.config/openbox/autostart
 !openbox/.config/openbox/menu.xml
