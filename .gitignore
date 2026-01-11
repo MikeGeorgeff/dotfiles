@@ -39,6 +39,10 @@
 !openbox/.config/openbox/rc.xml
 !openbox/README.md
 
+# Rofi
+!rofi/.config/rofi/config.rasi
+!rofi/.config/rofi/ayu-dark.rasi
+
 # Shell
 !shell/.config/shell/aliases.sh
 !shell/bin/aliases
