@@ -13,6 +13,7 @@ This repository contains configurations for:
 - **nitrogen** - Wallpaper manager configuration
 - **nvim** - Neovim editor configuration
 - **openbox** - Openbox window manager configuration
+- **rofi** - Application launcher configuration (Ayu dark theme)
 - **shell** - Shell scripts and aliases
 - **ssh** - SSH client configuration
 - **terminator** - Terminator terminal emulator
