@@ -7,10 +7,12 @@ Personal configuration files managed with [GNU Stow](https://www.gnu.org/softwar
 This repository contains configurations for:
 
 - **alacritty** - Terminal emulator configuration
+- **compton** - Compositor configuration
 - **conky** - System monitor configuration
 - **git** - Git global configuration
 - **nvim** - Neovim editor configuration
 - **openbox** - Openbox window manager configuration
+- **shell** - Shell scripts and aliases
 - **ssh** - SSH client configuration
 - **terminator** - Terminator terminal emulator
 - **tint2** - Panel/taskbar configuration

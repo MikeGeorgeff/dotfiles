@@ -1,10 +1,13 @@
 # Whitelist approach: ignore everything, then explicitly allow tracked files
+# This prevents any file other than those explicitly listed below from being committed.
+# To add a new file to the repository, you MUST add it to this whitelist using !<path>
 *
 !*/
 
 # Root files
 !.gitignore
 !README.md
+!CLAUDE.md
 
 # Alacritty
 !alacritty/.config/alacritty/alacritty.toml
