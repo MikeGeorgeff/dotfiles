@@ -17,6 +17,7 @@ This repository contains configurations for:
 - **terminator** - Terminator terminal emulator
 - **tint2** - Panel/taskbar configuration
 - **tmux** - Terminal multiplexer configuration
+- **wallpapers** - Desktop wallpaper images
 - **zsh** - Zsh shell configuration
 
 ## Prerequisites
