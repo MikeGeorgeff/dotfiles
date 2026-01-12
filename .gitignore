@@ -50,6 +50,7 @@
 !shell/bin/lazygit
 !shell/bin/mkscript
 !shell/bin/yt-dlp
+!shell/bin/rpi-imager
 
 # SSH (config only, no private keys)
 !ssh/.ssh/config
