@@ -53,6 +53,11 @@
         <execute>nm-connection-editor</execute>
       </action>
     </item>
+    <item label="Bluetooth Manager">
+      <action name="Execute">
+        <execute>blueman-manager</execute>
+      </action>
+    </item>
     <separator />
     <menu id="settings" label="Settings">
       <item label="Reconfigure Openbox">
