@@ -21,6 +21,9 @@
 # Git
 !git/.gitconfig
 
+# GTK
+!gtk/.config/gtk-3.0/settings.ini
+
 # Neovim
 !nvim/.config/nvim/README.md
 !nvim/.config/nvim/init.lua

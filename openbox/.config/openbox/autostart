@@ -38,7 +38,7 @@ nm-applet &
 pulseaudio --start &
 
 ## Volume control systray
-pasystray &
+mate-volume-control-status-icon &
 
 ## Enable power management
 xfce4-power-manager &
