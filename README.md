@@ -20,6 +20,7 @@ This repository contains configurations for:
 - **tint2** - Panel/taskbar configuration
 - **tmux** - Terminal multiplexer configuration
 - **wallpapers** - Desktop wallpaper images
+- **xfce4** - XFCE4 power manager configuration
 - **zsh** - Zsh shell configuration
 
 ## Prerequisites

@@ -61,6 +61,9 @@
 # Tint2
 !tint2/.config/tint2/tint2rc
 
+# XFCE4
+!xfce4/.config/xfce4/xfconf/xfce-perchannel-xml/xfce4-power-manager.xml
+
 # Tmux
 !tmux/.tmux.conf
 !tmux/README.md

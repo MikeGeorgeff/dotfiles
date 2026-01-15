@@ -35,7 +35,7 @@
     <separator />
     <item label="Power Manager">
       <action name="Execute">
-        <execute>mate-power-preferences</execute>
+        <execute>xfce4-power-manager -c</execute>
       </action>
     </item>
     <item label="Display Manager">
