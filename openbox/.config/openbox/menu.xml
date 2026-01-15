@@ -45,7 +45,7 @@
     </item>
     <item label="Volume Manager">
       <action name="Execute">
-        <execute>mate-volume-control</execute>
+        <execute>pavucontrol</execute>
       </action>
     </item>
     <item label="Network Manager">
