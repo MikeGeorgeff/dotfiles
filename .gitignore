@@ -18,6 +18,9 @@
 # Conky
 !conky/.conkyrc
 
+# Fastfetch
+!fastfetch/.config/fastfetch/config.jsonc
+
 # Git
 !git/.gitconfig
 
