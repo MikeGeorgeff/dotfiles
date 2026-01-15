@@ -43,9 +43,6 @@ mate-volume-control-status-icon &
 ## Enable power management
 xfce4-power-manager &
 
-## Start Thunar Daemon
-thunar --daemon &
-
 ## Start xscreensaver
 xscreensaver -no-splash &
 

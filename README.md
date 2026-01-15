@@ -9,10 +9,13 @@ This repository contains configurations for:
 - **alacritty** - Terminal emulator configuration
 - **compton** - Compositor configuration
 - **conky** - System monitor configuration
+- **fastfetch** - System information tool configuration
 - **git** - Git global configuration
+- **gtk** - GTK theme settings
 - **nitrogen** - Wallpaper manager configuration
 - **nvim** - Neovim editor configuration
 - **openbox** - Openbox window manager configuration
+- **ranger** - Terminal file manager
 - **rofi** - Application launcher configuration (Ayu dark theme)
 - **shell** - Shell scripts and aliases
 - **ssh** - SSH client configuration
@@ -22,6 +25,14 @@ This repository contains configurations for:
 - **wallpapers** - Desktop wallpaper images
 - **xfce4** - XFCE4 power manager configuration
 - **zsh** - Zsh shell configuration
+
+## Documentation
+
+| Module | Description |
+|--------|-------------|
+| [openbox](openbox/README.md) | Openbox window manager keybindings and configuration |
+| [ranger](ranger/README.md) | Ranger file manager keybindings |
+| [tmux](tmux/README.md) | Tmux terminal multiplexer usage |
 
 ## Prerequisites
 

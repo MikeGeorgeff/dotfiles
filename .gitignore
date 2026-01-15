@@ -37,6 +37,13 @@
 
 # Nitrogen
 !nitrogen/.config/nitrogen/bg-saved.cfg
+
+# Ranger
+!ranger/README.md
+!ranger/.config/ranger/rc.conf
+!ranger/.config/ranger/rifle.conf
+!ranger/.config/ranger/commands.py
+!ranger/.config/ranger/scope.sh
 !nitrogen/.config/nitrogen/nitrogen.cfg
 
 # Openbox

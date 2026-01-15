@@ -19,7 +19,7 @@
     </item>
     <item label="File Manager">
       <action name="Execute">
-        <execute>thunar</execute>
+        <execute>terminator -e ranger</execute>
       </action>
     </item>
     <item label="Task Manager">
