@@ -1,9 +1,7 @@
 #!/bin/bash
 
-alias reboot="sudo /sbin/reboot"
-alias halt="sudo /sbin/halt"
-alias poweroff="sudo /sbin/poweroff"
-alias shutdown="sudo /sbin/shutdown"
+alias reboot="systemctl reboot"
+alias shutdown="systemctl shutdown"
 
 alias vi="nvim"
 alias vim="nvim"
