@@ -37,11 +37,11 @@ nm-applet &
 ## Start PulseAudio
 pulseaudio --start &
 
-## Volume keys daemon
-mate-volume-control-status-icon &
+## Volume control systray
+pasystray &
 
 ## Enable power management
-mate-power-manager &
+xfce4-power-manager &
 
 ## Start Thunar Daemon
 thunar --daemon &
