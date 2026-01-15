@@ -85,5 +85,15 @@
         <execute>openbox --exit</execute>
       </action>
     </item>
+    <item label="Reboot">
+      <action name="Execute">
+        <execute>systemctl reboot</execute>
+      </action>
+    </item>
+    <item label="Shutdown">
+      <action name="Execute">
+        <execute>systemctl poweroff</execute>
+      </action>
+    </item>
   </menu>
 </openbox_menu>
