@@ -929,6 +929,11 @@
 
   # end of the example
 -->
+    <!-- Remove decorations from all windows -->
+    <application class="*">
+      <decor>no</decor>
+    </application>
+
     <application name="gmessage">
       <decor>no</decor>
       <shade>no</shade>
