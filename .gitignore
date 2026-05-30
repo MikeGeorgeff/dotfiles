@@ -64,6 +64,7 @@
 !shell/bin/mkscript
 !shell/bin/yt-dlp
 !shell/bin/rpi-imager
+!shell/bin/devbox
 
 # SSH (config only, no private keys)
 !ssh/.ssh/config
