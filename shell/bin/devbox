@@ -16,5 +16,12 @@ _devbox_ip() {
 }
 
 TARGET=$(_devbox_ip)
+
+# Abort if we would SSH into ourselves
+if ip addr show 2>/dev/null | grep -qF "inet $TARGET/"; then
+    echo "Already on devbox ($TARGET), aborting." >&2
+    exit 1
+fi
+
 echo "Connecting to devbox ($TARGET)..."
 exec ssh "$TARGET" "$@"
