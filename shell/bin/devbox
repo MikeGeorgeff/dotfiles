@@ -2,17 +2,16 @@
 
 LOCAL_IP="10.10.3.33"
 TAILNET_IP="100.79.76.40"
+BEACON_URL="http://10.10.3.99/"
+BEACON_UUID="1117418b-566e-4d9c-9008-652f6d971d7b"
 
-# Resolve which IP to use by checking the routing table.
-# If the route to the local IP goes through a tailscale interface, we're
-# off-network and should use the tailnet IP instead.
 _devbox_ip() {
-    local dev
-    dev=$(ip route get "$LOCAL_IP" 2>/dev/null | awk 'NR==1 { for (i=1;i<=NF;i++) if ($i=="dev") print $(i+1) }')
-    if [[ -z "$dev" || "$dev" == tailscale* ]]; then
-        echo "$TAILNET_IP"
-    else
+    local response
+    response=$(curl -sf --max-time 2 "$BEACON_URL" 2>/dev/null | tr -d '[:space:]')
+    if [[ "$response" == "$BEACON_UUID" ]]; then
         echo "$LOCAL_IP"
+    else
+        echo "$TAILNET_IP"
     fi
 }
 
