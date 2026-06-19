@@ -65,6 +65,7 @@
 !shell/bin/yt-dlp
 !shell/bin/rpi-imager
 !shell/bin/devbox
+!shell/bin/btop
 
 # SSH (config only, no private keys)
 !ssh/.ssh/config
