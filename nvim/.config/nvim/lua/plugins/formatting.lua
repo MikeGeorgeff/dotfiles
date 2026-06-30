@@ -17,6 +17,7 @@ return {
         lua = { "stylua" },
         python = { "isort", "black" },
         php = { "php_cs_fixer" },
+        go = { "goimports" },
         sh = { "shfmt" },
         bash = { "shfmt" },
       },

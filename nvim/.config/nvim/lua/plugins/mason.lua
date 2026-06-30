@@ -25,6 +25,7 @@ return {
         "lua_ls",
         "pyright",
         "ts_ls",
+        "gopls", -- Go
         "intelephense", -- PHP
         "jsonls", -- JSON
         "yamlls", -- YAML
@@ -47,6 +48,7 @@ return {
         "php-cs-fixer",
         "shfmt", -- Bash formatter
         "ansible-lint", -- Ansible linter
+        "goimports", -- Go formatter + import organizer
       },
     })
   end,

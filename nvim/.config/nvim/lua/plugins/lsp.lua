@@ -83,6 +83,7 @@ return {
       "lua_ls",
       "pyright",
       "ts_ls",
+      "gopls", -- Go
       "intelephense", -- PHP
       "jsonls", -- JSON
       "yamlls", -- YAML
